@@ -78,7 +78,7 @@ ft.add(R.id.CONTAINER_ID, paymentFrag).commit()
 7.  optionally you can also force check for success payment status without waiting for callback by calling forceCheckStatus function available on fragment class
 ``` kotlin
 paymentFrag.forceCheckStatus() 
-// it will call successCallBack labda function passed to fragment constructor is payment is already done
+// it will call successCallBack labda function passed to fragment constructor if payment is already done
 ```
 
 ## Usages (Java)
@@ -147,6 +147,6 @@ ft.add(R.id.CONTAINER_ID, paymentFrag).commit();
 7.  optionally you can also force check for success payment status without waiting for callback by calling forceCheckStatus function available on fragment class
 ``` java
 paymentFrag.forceCheckStatus() 
-// it will call successCallBack labda function passed to fragment constructor is payment is already done
+// it will call successCallBack labda function passed to fragment constructor if payment is already done
 ```
 
