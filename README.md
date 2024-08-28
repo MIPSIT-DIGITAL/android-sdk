@@ -72,13 +72,15 @@ var paymentFrag: MIPS_Payment_Fragent =
 6. show the payment fragment to process payment further
 
 ```kotlin
-val ft = supportFragmentManager.beginTransaction()  
-ft.add(R.id.CONTAINER_ID, paymentFrag).commit()
+import androidx.fragment.app.FragmentTransaction
+
+val transaction = supportFragmentManager.beginTransaction()  
+transaction.add(R.id.CONTAINER , paymentFrag).commit()
 ```
 7.  optionally you can also force check for success payment status without waiting for callback by calling forceCheckStatus function available on fragment class
 ``` kotlin
 paymentFrag.forceCheckStatus() 
-// it will call successCallBack labda function passed to fragment constructor if payment is already done
+// it will call successCallBack labda function passed to fragment constructor is payment is already done
 ```
 
 ## Usages (Java)
@@ -140,13 +142,14 @@ MIPS_Payment_Fragent paymentFrag =
 6. show the payment fragment to process payment further
 
 ```java
-FragmentTransaction ft = getSupportFragmentManager().beginTransaction();  
-ft.add(R.id.CONTAINER_ID, paymentFrag).commit();
+import androidx.fragment.app.FragmentTransaction;
+
+FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();  
+transaction.add(R.id.CONTAINER_ID, paymentFrag).commit();
 
 ```
 7.  optionally you can also force check for success payment status without waiting for callback by calling forceCheckStatus function available on fragment class
 ``` java
 paymentFrag.forceCheckStatus() 
-// it will call successCallBack labda function passed to fragment constructor if payment is already done
+// it will call successCallBack labda function passed to fragment constructor is payment is already done
 ```
-
