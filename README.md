@@ -16,7 +16,18 @@ implementation 'mu.mips:android_sdk:0.2.4'
 
 #### [visit maven central](https://central.sonatype.com/artifact/mu.mips/android_sdk)
 
+## Android Manifest File
 
+1. you need to add internet permission
+``` xml
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+```
+## Gradle FIle
+
+``` kotlin
+minSdk = 26 // this sdk needs min android sdk v26
+```
 ## Usages (Kotlin)
 
 1. create instance of Merchant details (provided by MIPS admin)
