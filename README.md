@@ -95,13 +95,6 @@ val transaction = supportFragmentManager.beginTransaction()
 transaction.add(R.id.CONTAINER , paymentFrag).commit()
 ```
 
-7.  optionally you can also force check for success payment status without waiting for callback by calling forceCheckStatus function available on fragment class
-
-```kotlin
-paymentFrag.forceCheckStatus()
-// it will call successCallBack labda function passed to fragment constructor is payment is already done
-```
-
 ## Usages (Java)
 
 1. create instance of Merchant details (provided by MIPS admin)
