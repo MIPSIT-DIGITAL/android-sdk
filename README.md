@@ -3,13 +3,13 @@
 ### add dependency to your build.gradle file
 
 ```kotlin
-implementation("mu.mips:android_sdk:0.2.7")
+implementation("mu.mips:android_sdk:0.2.9")
 ```
 
 ##### or
 
 ```groovy
-implementation 'mu.mips:android_sdk:0.2.7'
+implementation 'mu.mips:android_sdk:0.2.9'
 ```
 
 ##### or
