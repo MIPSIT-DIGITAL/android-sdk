@@ -3,13 +3,13 @@
 ### add dependency to your build.gradle file
 
 ```kotlin
-implementation("mu.mips:android_sdk:0.2.9")
+implementation("mu.mips:android_sdk:0.2.10")
 ```
 
 ##### or
 
 ```groovy
-implementation 'mu.mips:android_sdk:0.2.9'
+implementation 'mu.mips:android_sdk:0.2.10'
 ```
 
 ##### or
@@ -80,7 +80,7 @@ var paymentFrag: MIPS_Payment_Fragent =
 		    successCallback = { mode ->
 		        showSuccessScreen()
 		    } ,
-		    failureHandler = {
+		    failureHandler = {failureReason ->
 		        showFailureScreen()
 		    }
 		)
@@ -147,7 +147,7 @@ MIPS_Payment_Fragent paymentFrag =
 	            showSuccessScreen();
 	            return Unit.INSTANCE;
 	        },
-	        () -> {  // failuer handler
+	        (failureReason) -> {  // failuer handler
 	            showFailureScreen();
 	            return Unit.INSTANCE;
 	        }
