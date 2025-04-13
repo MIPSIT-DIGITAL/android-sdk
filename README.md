@@ -53,7 +53,7 @@ val credential = MerchantCredentials(
 )
 ```
 
-3. create instance of MerchantCredentials
+3. create instance of Order amount
 
 ```kotlin
 val amount = mu.mips.mips_payment_sdk.Models.Amount(
@@ -117,7 +117,7 @@ MerchantCredentials credential = new MerchantCredentials(
 );
 ```
 
-3. create instance of MerchantCredentials
+3. create instance of Order amount
 
 ```java
 Amount amount = new Amount(
