@@ -28,7 +28,7 @@ implementation 'mu.mips:android_sdk:0.2.10'
 ## Gradle FIle
 
 ```kotlin
-minSdk = 26 // this sdk needs min android sdk v26
+minSdk = 24 // this sdk needs min android sdk v24
 ```
 
 ## Usages (Kotlin)
